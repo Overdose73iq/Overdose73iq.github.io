@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoWeb</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="todo-container">
+        <h1>Список дел</h1>
+        
+        <div class="todo-form">
+            <input type="text" id="todo-input" placeholder="Добавить новую задачу..." autocomplete="off">
+            <button id="add-btn">Добавить</button>
+        </div>
+        <div class="todo-controls">
+            <span id="items-left">0 задач</span>
+            <button id="clear-all-btn">Очистить всё</button>
+        </div>
+
+        <ul id="todo-list" class="todo-list">
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
