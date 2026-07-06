@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги по автоматизации и анализу данных</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="content">
+            <h1>Сервис автоматизации и анализа данных</h1>
+            <p>Разработка Excel инструментов, очистка таблиц и настройка формул</p>
+        </div>
+    </header>
+
+    <main class="content">
+        <section class="top-panel">
+            <input type="text" id="search" placeholder="Поиск по названию...">
+            <div class="cats">
+                <button class="btn active" data-cat="all">Все</button>
+                <button class="btn" data-cat="excel">Excel</button>
+                <button class="btn" data-cat="clean">Очистка данных</button>
+                <button class="btn" data-cat="macro">Макросы</button>
+            </div>
+        </section>
+
+        <section class="grid" id="catalog">
+            <!-- Сюда вставляются элементы через js -->
+        </section>
+
+        <section class="form-block">
+            <h3>Оставить заявку на расчет стоимости</h3>
+            <form id="main-form">
+                <div class="row">
+                    <label>Имя:</label>
+                    <input type="text" id="uname" required>
+                </div>
+                <div class="row">
+                    <label>Email:</label>
+                    <input type="email" id="uemail" required>
+                </div>
+                <div class="row">
+                    <label>Описание задачи:</label>
+                    <textarea id="utext" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="send-btn">Отправить</button>
+            </form>
+            <div id="success" style="display: none; text-align: center; color: green; font-weight: bold;">
+                Форма успешно отправлена!
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Игорь Пенской — Цифровая кафедра 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
